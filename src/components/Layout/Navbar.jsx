@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { BsFillCloudSunFill } from "react-icons/bs";
+import { FiSun } from "react-icons/fi";
+import MyContext from "../../contexts/MyContext";
+
 
 const Navbar = () => {
+  const context = useContext(MyContext)
+  const { toggleMode, mode } = context
   return (
     <nav className="bg-zinc-600 p-4">
       <div className="container mx-auto flex justify-between items-center">
@@ -21,6 +27,15 @@ const Navbar = () => {
           >
             Cart
           </Link>
+          <button className="" onClick={toggleMode}>
+            {mode === "light" ? (
+              <FiSun className="text-white" size={30} />
+            ) : "dark" ? (
+              <BsFillCloudSunFill className="text-white" size={30} />
+            ) : (
+              "gdsg"
+            )}
+          </button>
           <Link
             to="/login"
             className="text-white hover:text-gray-300 transition duration-300"

@@ -5,14 +5,26 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import Layout from "./components/Layout/Layout";
+import {
+  Layout,
+  Login,
+  Signup,
+  NoPage,
+  Home,
+  ProductInfo,
+  Cart,
+} from "./pages/index";
 import "./index.css";
-import Home from "./pages/home/Home";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Home />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/cart" element={<Cart />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/productinfo/:id" element={<ProductInfo />} />
+      <Route path="/*" element={<NoPage />} />
     </Route>
   )
 );
