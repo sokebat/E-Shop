@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Image from "../../components/MainImage/Image";
+import ProductCard from "../../components/ProductCard/ProductCard";
+import Testimonal from "../../components/Testimonial/Testimonial";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <>
+      <Image />
+      <ProductCard />
+      <Testimonal/>
+    </>
+  );
+};
 
-export default Home
+export default Home;
