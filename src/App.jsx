@@ -13,6 +13,9 @@ import {
   Home,
   ProductInfo,
   Cart,
+  Dashboard,
+  UpdateProduct,
+  AddProduct,
 } from "./pages/index";
 import "./index.css";
 
@@ -21,6 +24,9 @@ const router = createBrowserRouter(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Home />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/updateproduct" element={<UpdateProduct />} />
+      <Route path="/addproduct" element={<AddProduct />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/productinfo/:id" element={<ProductInfo />} />

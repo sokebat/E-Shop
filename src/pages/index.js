@@ -5,5 +5,19 @@ import NoPage from "./nopage/NoPage"
 import Home from "./home/Home"
 import ProductInfo from "./productInfo/ProductInfo";
 import Cart from "./Cart/Cart";
+import Dashboard from "./admin/Dashboard/Dashboard";
+import AddProduct from "./admin/page/AddProduct";
+import UpdateProduct from "./admin/page/UpdateProduct";
 
-export { Layout, Login, Signup, NoPage, Home, ProductInfo,Cart}
+export {
+    Layout,
+    Login,
+    Signup,
+    NoPage,
+    Home,
+    Dashboard,
+    ProductInfo,
+    Cart,
+    UpdateProduct,
+    AddProduct
+}
