@@ -4,6 +4,8 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "../../index.css";
 import MyState from "../../contexts/MyState";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Layout = () => {
   return (
@@ -12,6 +14,7 @@ const Layout = () => {
         <Navbar />
         <Outlet />
         <Footer />
+        <ToastContainer />
       </MyState>
     </>
   );

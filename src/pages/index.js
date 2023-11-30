@@ -8,6 +8,7 @@ import Cart from "./Cart/Cart";
 import Dashboard from "./admin/Dashboard/Dashboard";
 import AddProduct from "./admin/page/AddProduct";
 import UpdateProduct from "./admin/page/UpdateProduct";
+import Order from "./order/Order";
 
 export {
     Layout,
@@ -19,5 +20,6 @@ export {
     ProductInfo,
     Cart,
     UpdateProduct,
-    AddProduct
+    AddProduct,
+    Order
 }

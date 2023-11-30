@@ -19,7 +19,19 @@ const Navbar = () => {
             to="/products"
             className="text-white hover:text-gray-300 transition duration-300"
           >
-            Products
+            All Products
+          </Link>
+          <Link
+            to="/order"
+            className="text-white hover:text-gray-300 transition duration-300"
+          >
+            Order
+          </Link>
+          <Link
+            to="/dashboard"
+            className="text-white hover:text-gray-300 transition duration-300"
+          >
+            Admin
           </Link>
           <Link
             to="/cart"
@@ -40,7 +52,7 @@ const Navbar = () => {
             to="/login"
             className="text-white hover:text-gray-300 transition duration-300"
           >
-            Login
+            Logout
           </Link>
         </div>
       </div>
